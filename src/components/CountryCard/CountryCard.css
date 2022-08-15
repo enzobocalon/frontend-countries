@@ -1,0 +1,42 @@
+.country{
+    margin: 2rem;
+    margin-top: 0;
+    padding-bottom: 1rem;
+    background-color: hsl(209, 23%, 22%);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.country.light{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(200, 15%, 8%);
+}
+
+.country-flag img{
+    width: 320px;
+    height: 180px;
+    border-radius: 10px 10px 0 0;
+}
+
+.country-data{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.country-data h3{
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+.country-data span{
+    margin-bottom: 5px;
+}
+
+.country:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+}

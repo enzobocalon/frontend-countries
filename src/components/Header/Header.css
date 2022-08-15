@@ -1,0 +1,41 @@
+header{
+    background-color: hsl(209, 23%, 22%);
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    transition: all .3s ease;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+header.light{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(200, 15%, 8%);
+    transition: all .3s ease;
+}
+
+.toggle-mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    header{
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    header h2{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    header{
+        padding: 1rem 0;
+    }
+}
