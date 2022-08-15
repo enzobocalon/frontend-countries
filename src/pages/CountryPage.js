@@ -26,7 +26,7 @@ const CountryPage = () => {
         : (
           <div className='error'>
             <h1>Please, to use this page select a country using the main page!</h1>
-            <Link to='/'>
+            <Link to='/frontend-countries'>
               <button id='back-error'>Go to Homepage!</button>
             </Link>
           </div>

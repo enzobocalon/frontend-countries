@@ -25,7 +25,7 @@ const CountryInfo = ({state}) => {
         <div className={`page-container ${mode ? '' : 'light'}`}>
         <div className='col-1'>
             <div className='back-container'>
-                <Link to='/'>
+                <Link to='/frontend-countries'>
                 <button id='back' className={`${mode ? '' : 'light'}`}><MdKeyboardBackspace/>Back</button>
                 </Link> 
             </div>

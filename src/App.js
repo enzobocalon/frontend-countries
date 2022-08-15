@@ -9,8 +9,8 @@ function App() {
   return (
   <ModeProvider> 
       <Routes>
-        <Route exact path="/" element = {<Homepage />} />
-        <Route path="/country" element = {<CountryPage />} />
+        <Route exact path="/frontend-countries" element = {<Homepage />} />
+        <Route path="/frontend-countries/country" element = {<CountryPage />} />
       </Routes>
   </ModeProvider>
   );
