@@ -9,7 +9,7 @@ function App() {
   return (
   <ModeProvider> 
       <Routes>
-        <Route exact path="/frontend-countries" element = {<Homepage />} />
+        <Route path="/frontend-countries" element = {<Homepage />} />
         <Route path="/frontend-countries/country" element = {<CountryPage />} />
       </Routes>
   </ModeProvider>
