@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/enzobocalon.github.io/frontend-countries/static/css/main.65f937df.css",
-    "main.js": "/enzobocalon.github.io/frontend-countries/static/js/main.4564d54d.js",
-    "index.html": "/enzobocalon.github.io/frontend-countries/index.html",
-    "main.65f937df.css.map": "/enzobocalon.github.io/frontend-countries/static/css/main.65f937df.css.map",
-    "main.4564d54d.js.map": "/enzobocalon.github.io/frontend-countries/static/js/main.4564d54d.js.map"
+    "main.css": "/frontend-countries/static/css/main.65f937df.css",
+    "main.js": "/frontend-countries/static/js/main.faaed492.js",
+    "index.html": "/frontend-countries/index.html",
+    "main.65f937df.css.map": "/frontend-countries/static/css/main.65f937df.css.map",
+    "main.faaed492.js.map": "/frontend-countries/static/js/main.faaed492.js.map"
   },
   "entrypoints": [
     "static/css/main.65f937df.css",
-    "static/js/main.4564d54d.js"
+    "static/js/main.faaed492.js"
   ]
 }
