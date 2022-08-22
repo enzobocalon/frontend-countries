@@ -110,7 +110,7 @@ const Gallery = () => {
             search.length > 0 ? 
                 filterSearch.map(item => {
                     return (
-                    <Link to={`/frontend-countries/${item.name.common}`} state={item}>
+                    <Link to={`/${item.name.common}`} state={item}>
                         <CountryCard country = {item}/>
                     </Link>   
                     )
@@ -118,7 +118,7 @@ const Gallery = () => {
                 :
                 countries.map((item) => {
                     return (
-                    <Link to={`/frontend-countries/${item.name.common}`} state={item}> 
+                    <Link to={`/${item.name.common}`} state={item}> 
                         <CountryCard country = {item}/>
                     </Link> 
                     )

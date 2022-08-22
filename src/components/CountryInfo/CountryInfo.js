@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import '../../pages/CountryPage.css'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import {MdKeyboardBackspace} from 'react-icons/md'
 
@@ -11,6 +11,7 @@ const CountryInfo = ({state}) => {
     // Getting name from the Object
     const nameIndex = Object.keys(state.name.nativeName).sort()
     const finalNativeName = state.name.nativeName[nameIndex[0]].official
+
     // Getting currency from the Object
     const currencyIndex = Object.keys(state.currencies).sort()
     const finalCurrency = state.currencies[currencyIndex[0]].name
@@ -29,7 +30,7 @@ const CountryInfo = ({state}) => {
         <div className={`page-container ${mode ? '' : 'light'}`}>
         <div className='col-1'>
             <div className='back-container'>
-                <Link to='/frontend-countries'>
+                <Link to='/'>
                 <button id='back' className={`${mode ? '' : 'light'}`}><MdKeyboardBackspace/>Back</button>
                 </Link> 
             </div>

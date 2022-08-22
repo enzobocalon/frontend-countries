@@ -5,7 +5,7 @@ import './CountryPage.css'
 
 import {getCurrentCountry} from '../services/api'
 
-import {Link, useLocation, useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 
 import CountryInfo from '../components/CountryInfo/CountryInfo'
 
