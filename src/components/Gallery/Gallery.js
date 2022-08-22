@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import './Gallery.css'
 import { ModeContext } from '../../context/Modes'
-import getCountry from '../../services/api'
+import {getCountry} from '../../services/api'
 
 import {MdOutlineSearch, MdExpandMore} from 'react-icons/md'
 import CountryCard from '../CountryCard/CountryCard'
@@ -63,7 +63,7 @@ const Gallery = () => {
 
     useEffect(() => {
         getCountry().then((res) => {
-        setAllCountries(res)
+        setAllCountries(res) 
         setCountries(res) 
         setLoading(false)   
     })
@@ -110,7 +110,7 @@ const Gallery = () => {
             search.length > 0 ? 
                 filterSearch.map(item => {
                     return (
-                    <Link to='/frontend-countries/country' state={item}> 
+                    <Link to={`/frontend-countries/${item.name.common}`} state={item}>
                         <CountryCard country = {item}/>
                     </Link>   
                     )
@@ -118,7 +118,7 @@ const Gallery = () => {
                 :
                 countries.map((item) => {
                     return (
-                    <Link to='/frontend-countries/country' state={item}> 
+                    <Link to={`/frontend-countries/${item.name.common}`} state={item}> 
                         <CountryCard country = {item}/>
                     </Link> 
                     )

@@ -1,24 +1,44 @@
-import React, {useContext} from 'react'
+import React, {useContext, useEffect} from 'react'
 import '../../pages/CountryPage.css'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+
 import {MdKeyboardBackspace} from 'react-icons/md'
+
 import { ModeContext } from '../../context/Modes'
 
+import getCountry from '../../services/api'
+
 const CountryInfo = ({state}) => {
+
+    const URL_ID = useParams();
+    
+    // Getting name from the Object
     const nameIndex = Object.keys(state.name.nativeName).sort()
     const finalNativeName = state.name.nativeName[nameIndex[0]].official
-    console.log(finalNativeName)
+    // Getting currency from the Object
     const currencyIndex = Object.keys(state.currencies).sort()
     const finalCurrency = state.currencies[currencyIndex[0]].name
 
     const {mode, setMode} = useContext(ModeContext)
   
+    // Getting all languages
     let langArray = []
   
     Object.keys(state.languages).forEach((item) => {
       langArray = [...langArray, item]
     });
 
+    const shouldFetchData = () => {
+        if (!state) {
+            
+        } else {
+            return;
+        }
+    }
+
+    useEffect(() => {
+        shouldFetchData();
+    }, [])
 
   return (
     <>
