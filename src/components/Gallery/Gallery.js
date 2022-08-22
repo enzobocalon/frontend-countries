@@ -77,7 +77,7 @@ const Gallery = () => {
         <div className='action-container'>
             <div className={`search-container ${mode ? '' : 'light'}`}>
                 <MdOutlineSearch id='search-icon'/>
-                <input id='search' className={mode ? '' : 'light'} placeholder='Search for a country...' onChange = {e => setSearch(e.target.value)}/>
+                <input id='search' className={mode ? '' : 'light'} placeholder='Search for a country...' onChange = {e => {setSearch(e.target.value.toLowerCase())}}/>
             </div>
 
             <div className='filter-container'>
