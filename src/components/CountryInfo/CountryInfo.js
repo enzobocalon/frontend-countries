@@ -30,12 +30,13 @@ const CountryInfo = ({state}) => {
         <div className={`page-container ${mode ? '' : 'light'}`}>
         <div className='col-1'>
             <div className='back-container'>
-                <Link to='/'>
-                <button id='back' className={`${mode ? '' : 'light'}`}><MdKeyboardBackspace/>Back</button>
-                </Link> 
+                <div>
+                    <Link to='/'>
+                    <button id='back' className={`${mode ? '' : 'light'}`}><MdKeyboardBackspace/>Back</button>
+                    </Link> 
+                <img src={state.flags.svg} />
+                </div>
             </div>
-
-            <img src={state.flags.svg} />
         </div>
 
         <div className='col-2'>
@@ -63,8 +64,8 @@ const CountryInfo = ({state}) => {
             </div>
         <div className='row-3'>
             <div className='border-countries'>
-            <span><span className='bold'>Border Countries: </span></span>
-            <span className='border'>
+            <div className='border'>
+            <span className='bold'>Border Countries: </span>
                 {
                 'borders' in state ? 
                 state.borders.map((item) => {
@@ -72,7 +73,7 @@ const CountryInfo = ({state}) => {
                 })
                 : 'None'
                 }
-            </span>
+            </div>
             </div>
         </div>
         </div>
