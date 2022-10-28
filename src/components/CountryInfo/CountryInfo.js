@@ -30,12 +30,10 @@ const CountryInfo = ({state}) => {
         <div className={`page-container ${mode ? '' : 'light'}`}>
         <div className='col-1'>
             <div className='back-container'>
-                <div>
                     <Link to='/'>
                     <button id='back' className={`${mode ? '' : 'light'}`}><MdKeyboardBackspace/>Back</button>
                     </Link> 
                 <img src={state.flags.svg} />
-                </div>
             </div>
         </div>
 
