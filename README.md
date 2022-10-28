@@ -19,7 +19,7 @@ Users should be able to:
 
 You can find my solution online at 
 
-- Github pages [https://frontend-countries-five.vercel.app/]
+- Vercel [https://frontend-countries-five.vercel.app/]
 
 ## Tools
 
